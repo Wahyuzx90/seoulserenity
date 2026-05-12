@@ -2,7 +2,7 @@ FROM php:8.3-apache
 
 # Install dependencies
 RUN apt-get update && apt-get install -y \
-    curl zip unzip git libzip-dev libpng-dev libxml2-dev \
+    curl zip unzip git libzip-dev libpng-dev libxml2-dev libonig-dev \
     && docker-php-ext-install pdo pdo_mysql zip bcmath mbstring xml
 
 # Install Composer
